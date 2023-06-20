@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mgonzalezS4repaso.Page3">
+    
+    <!--Implicito-->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="Red"/>
+                <Setter Property="TextColor" Value="BlanchedAlmond"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <!--Implicito-->
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" FontSize="16" HorizontalTextAlignment="End" TextColor="Red"/>
+            <Label Text="Pagina Tres" FontSize="24" HorizontalTextAlignment="Center" TextColor="DarkBlue"/>
+
+            <Entry x:Name="txtDato" IsReadOnly="True"/>
+            <Entry x:Name="txtEstudainte" IsReadOnly="True"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

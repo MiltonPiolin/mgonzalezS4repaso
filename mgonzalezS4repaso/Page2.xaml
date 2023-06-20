@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mgonzalezS4repaso.Page2">
+    <!--Tema Explicito-->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ButtonStyle" TargetType="Button">
+
+                <Setter Property="BackgroundColor" Value="Red"/>
+                <Setter Property="TextColor" Value="Black"/> 
+
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <!--Tema Explicito-->
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label x:Name="lblUsuario" TextColor="red" FontSize="16" HorizontalTextAlignment="End"/>
+            <Label Text="Pagina Dos" HorizontalTextAlignment="Center" FontSize="24" TextColor="Black"/>
+
+            <Entry x:Name="txtDato" Placeholder="Ingrese un valor númerico" Keyboard="Numeric" TextChanged="txtDato_TextChanged"/>
+            <Picker x:Name="pkrAumnos" Title="Estudantes">
+                <Picker.Items>
+                    <x:String>Milton</x:String>
+                    <x:String>Carlos</x:String>
+                    <x:String>Alex</x:String>
+                    <x:String>Katerine</x:String>
+                </Picker.Items>
+                
+            </Picker>
+
+            <Button x:Name="btnAbrir" Text="Abrir Ventana 3" Clicked="btnAbrir_Clicked" Style="{StaticResource ButtonStyle}"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
